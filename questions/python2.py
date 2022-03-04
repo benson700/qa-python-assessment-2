@@ -232,8 +232,18 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 
-def eight(string,  a):
-    return ""
+def eight(input,  a):
+	middle=len(input)//2
+	new_string=''
+	for i in range(len(input)):
+		if a%2!=0:
+			if i<(middle-((a-1)//2)) or i>(middle+((a-1)//2)):
+				new_string+=input[i]
+		else:
+			if i<(middle-(a//2)) or i>(middle+(a//2)):
+				new_string+=input[i]
+
+	return new_string
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
