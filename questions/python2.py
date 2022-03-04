@@ -253,7 +253,23 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
-    return False
+	s=''
+	long=string1
+	short=string2
+	if len(string1)<len(string2):
+		long=string2
+		short=string1
+	for i in range(len(short)):
+		for j in range(len(long)):
+			if short[i]==long[j]:
+				s+=short[i]
+				break
+
+	if long==string2 and s==string1:
+		return True
+	elif long==string1 and s==string2:
+		return True
+	return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
