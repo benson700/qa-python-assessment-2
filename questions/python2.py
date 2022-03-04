@@ -273,7 +273,16 @@ def nine(string1, string2):
     # Think about nesting for loops.
 
 
-def ten(x, y):
-    return []
+def ten(X,Y):
+	new_list=list()
+	l=list()
+
+	for i in range(Y):
+		j=0
+		l=list()
+		while j<X:
+			l.append(i*j)
+			j+=1
+		new_list.append(l)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
