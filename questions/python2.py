@@ -84,7 +84,11 @@ def two(input):
 
 
 def three(a):
-    return 1
+	string = str(a)
+
+	a = int(string) + int(string + string) + int(string + string + string) + int(string + string+ string+ string)
+
+	return a
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -115,8 +119,12 @@ def three(a):
     # How would you seperate a string into characters?
 
 
-def four(string1, string2):
-    return ""
+def four(input1, input2):
+	new_string=''
+	for i in range(len(input1)):
+		new_string+=input1[i] + input2[i]
+
+	return new_string
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
