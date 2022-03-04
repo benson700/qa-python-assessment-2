@@ -30,8 +30,14 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
-def one(string):
-    return ""
+def one(input):
+	new_string=''
+
+	for i in range(len(input)):
+		for j in range(3):
+			new_string+=input[i]
+
+	return new_string
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
