@@ -143,8 +143,21 @@ def four(input1, input2):
     # The random module contains a function called randint.
 
 
+mport random
+
 def five():
-    return []
+
+    new = []
+
+    while len(new) < 5:
+
+        number = random.randint(100,200)
+
+        if number % 2 == 0:
+
+            new.append(number)
+
+    return new
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -165,8 +178,12 @@ def five():
     # There are no hints for this question.
 
 
-def six(string):
-    return False
+def six(input):
+	input = input.lower()
+	if input.endswith('py'):
+		return True
+
+	return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -193,8 +210,10 @@ def six(string):
 
 
 def seven(a, b, c):
-    return False
+	if (a+b+c)%3==0:
+		return True
 
+	return False
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 8>
